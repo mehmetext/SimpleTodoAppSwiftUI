@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F097B3622C62444B00FD8136 /* SimpleTodoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097B3612C62444B00FD8136 /* SimpleTodoAppApp.swift */; };
-		F097B3642C62444B00FD8136 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097B3632C62444B00FD8136 /* ContentView.swift */; };
+		F097B3642C62444B00FD8136 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097B3632C62444B00FD8136 /* MainView.swift */; };
 		F097B3662C62444C00FD8136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F097B3652C62444C00FD8136 /* Assets.xcassets */; };
 		F097B3692C62444C00FD8136 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F097B3682C62444C00FD8136 /* Preview Assets.xcassets */; };
 		F097B3732C62444C00FD8136 /* SimpleTodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097B3722C62444C00FD8136 /* SimpleTodoAppTests.swift */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		F097B35E2C62444B00FD8136 /* SimpleTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F097B3612C62444B00FD8136 /* SimpleTodoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTodoAppApp.swift; sourceTree = "<group>"; };
-		F097B3632C62444B00FD8136 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F097B3632C62444B00FD8136 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F097B3652C62444C00FD8136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F097B3682C62444C00FD8136 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F097B36E2C62444C00FD8136 /* SimpleTodoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTodoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,10 +100,10 @@
 		F097B3602C62444B00FD8136 /* SimpleTodoApp */ = {
 			isa = PBXGroup;
 			children = (
-				F097B3902C624B0C00FD8136 /* GoogleService-Info.plist */,
-				F097B3612C62444B00FD8136 /* SimpleTodoAppApp.swift */,
-				F097B3632C62444B00FD8136 /* ContentView.swift */,
-				F097B3652C62444C00FD8136 /* Assets.xcassets */,
+				F097B3972C624C2B00FD8136 /* Others */,
+				F097B3962C624C2300FD8136 /* Models */,
+				F097B3952C624C1F00FD8136 /* ViewModels */,
+				F097B3932C624C0400FD8136 /* Views */,
 				F097B3672C62444C00FD8136 /* Preview Content */,
 			);
 			path = SimpleTodoApp;
@@ -132,6 +132,38 @@
 				F097B37E2C62444C00FD8136 /* SimpleTodoAppUITestsLaunchTests.swift */,
 			);
 			path = SimpleTodoAppUITests;
+			sourceTree = "<group>";
+		};
+		F097B3932C624C0400FD8136 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F097B3632C62444B00FD8136 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F097B3952C624C1F00FD8136 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F097B3962C624C2300FD8136 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F097B3972C624C2B00FD8136 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F097B3902C624B0C00FD8136 /* GoogleService-Info.plist */,
+				F097B3612C62444B00FD8136 /* SimpleTodoAppApp.swift */,
+				F097B3652C62444C00FD8136 /* Assets.xcassets */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F097B3642C62444B00FD8136 /* ContentView.swift in Sources */,
+				F097B3642C62444B00FD8136 /* MainView.swift in Sources */,
 				F097B3622C62444B00FD8136 /* SimpleTodoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
